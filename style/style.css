@@ -50,6 +50,23 @@ body{
   padding: 10px 15px;
   border-right:1px solid rgba(0,0,0,0.1);
 }
+
+/* mesage content */
 .mesage-contener{
   flex: 12;
+}
+.chat-title{
+  display: flex;
+  align-items: center;
+}
+.message-header-content{
+  margin-left: 15px;
+}
+.message-header-content p{
+  font-size: 13px;
+  color: gray;
+}
+h4{
+  font-weight: 400;
+
 }
