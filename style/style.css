@@ -97,6 +97,7 @@ body{
   left: 20px;
   flex: 1;
 }
+
 .sidebar-chat{
   display: flex;
   justify-content: flex-start;
@@ -108,7 +109,16 @@ body{
   cursor: pointer;
 }
 .sidebar-chat:hover{
-  background-color: #ededed;
+  background-color: #c9c1c183;
+}
+.sidebar-chat::before{
+  content: '';
+  position: absolute;
+  width: 80%;
+  bottom: 0;
+  left: 80px;
+  border-bottom: 1px solid gray;
+  opacity: 0.2;
 }
 .green{
   border-radius: 50%;
@@ -160,4 +170,29 @@ body{
 h4{
   font-weight: 500;
 
+}
+
+.message-content{
+  background-image: url(/img/background.png);
+  background-position: center;
+  height: calc(110vh - 120px);
+  padding: 20px 80px;
+  overflow-y: scroll;
+}
+.chat-message{
+  font-size: 14px;
+  padding: 8px 10px;
+  width: fit-content;
+  border-radius: 8px;
+  background-color: white;
+  margin-bottom: 30px;
+}
+.chat-timestamp{
+  margin-left: 10px;
+  font-size: 10px;
+  color: gray;
+}
+.chat-sent{
+  margin-left: auto;
+  background-color: #dcf8c6;
 }
